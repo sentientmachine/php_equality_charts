@@ -5,4 +5,4 @@
 
 
 ![Alt text](
-/var/www/localhost/htdocs/blog/files/php_double_equals_equality_chart.png?raw=true "Title")
+php_double_equals_equality_chart.png?raw=true "Title")
