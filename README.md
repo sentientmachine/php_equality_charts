@@ -1,4 +1,4 @@
-# PHP code that creates this image representing PHP double equals operator:
+# PHP code that creates this image representing PHP double equals == operator:
 
 Here: <a href="phpequalitychart.php">phpequalitychart.php</a>
 
@@ -6,7 +6,7 @@ Here: <a href="phpequalitychart.php">phpequalitychart.php</a>
 php_double_equals_equality_chart.png?raw=PHP double equals operator")
 
 
-# PHP code that creates this image representing PHP double equals operator:
+# PHP code that creates this image representing PHP triple equals === operator:
 
 Here: <a href="phpequalitychart.php">phpequalitychart.php</a>
 
