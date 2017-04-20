@@ -17,3 +17,7 @@ Credits... All glory to the: https://gist.github.com/s0enke/37e0e93d833af1a004a1
 
 
 ![Alt text](./php_everywhere.jpg?raw="php, php everywhere")
+
+
+![Alt text]("./php_double_equals_equality_chart.png?raw='PHP double equals operator'")
+
