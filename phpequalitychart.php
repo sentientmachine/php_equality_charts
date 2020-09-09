@@ -86,10 +86,12 @@ td {
     font-weight: bold;
     text-align: right;
 }
+<!-- css definition for paint a green square background if equal -->
 td.equals {
     border: 1px solid black;
     background-color: #5bbe5b;
 }
+<!-- css definition for paint a default white square background if not equal -->
 td.notequals {
     border: 1px solid grey;
     background-color: white;
