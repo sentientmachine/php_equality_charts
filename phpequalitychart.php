@@ -1,32 +1,10 @@
 <?php
-/*
-$values = array(
-    'true' => true,
-    'false' => false,
-    '1' => 1,
-    '0' => 0,
-    '-1' => -1,
-    '"true"' => "true",
-    '"false"' => "false",
-    '"1"' => "1",
-    '"0"' => "0",
-    '"-1"' => "-1",
-    '""' => "",
-    'null' => null,
-    '"null"' => "null",
-    '[]' => array(),
-    '{}' => new stdClass(),
-    '[[]]' => array(array()),
-    '[0]' => array(0),
-    '[1]' => array(1),
-);
- */
 //Make a php dictionary that has keys of the formal string name and its actual value to be compared.
 $values = array(
-    'true' => true,
-    'false' => false,
-    '1' => 1,
-    '1.0' => 1.0,
+    'true'   => true,
+    'false'  => false,
+    '1'      => 1,
+    '1.0'    => 1.0,
     '1.3' => 1.3,
     '0' => 0,
     '-1' => -1,
@@ -65,7 +43,6 @@ table {
     font-size: 10px;
 }
 th > div {
-    //vertical-align: bottom;
     white-space: nowrap;
     width: 20px;
     transform: rotate(90deg);
@@ -101,21 +78,23 @@ td.comp {
     height: 20px;
 }
 </style>
+    
 <body style="background-color: #eeeeee">
 <table border=1>
     <tr>
         <th border=1 class="side">&nbsp;</th>
 <?php
-//iterate over the dictionary of values above and put the key into '$valuePretty' variable and dictionary value into '$value' variable.
+//Overlay the html table headers with their named values.
 foreach ($values as $valuePretty => $value) {
 ?>
-        <!-- <th><div><?php echo htmlspecialchars($valuePretty); ?></div></th> -->
+        <!-- echo htmlspecialchars($valuePretty); -->
         <th><div><?php echo $valuePretty; ?></div></th>
 <?php
 }
 ?>
     </tr>
 <?php
+//iterate over the dictionary of values above and put the key into '$valuePretty' variable and dictionary value into '$value' variable.
 foreach ($values as $valueYPretty => $valueY) {
 ?>
     <tr>
@@ -129,10 +108,12 @@ foreach ($values as $valueYPretty => $valueY) {
         <td class="comp <?php echo ($valueY == $valueX ? 'equals' : 'notequals'); ?>">&nbsp;</td>
 <?php
     }
+    //end Y dimension foreach.
 ?>
     </tr>
 <?php
 }
+//end X dimension foreach
 ?>
 </table>
 </html>
