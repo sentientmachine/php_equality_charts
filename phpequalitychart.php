@@ -21,6 +21,7 @@ $values = array(
     '[1]' => array(1),
 );
  */
+//Make a php dictionary that has keys of the formal string name and its actual value to be compared.
 $values = array(
     'true' => true,
     'false' => false,
@@ -54,6 +55,7 @@ $values = array(
     '"12.3456789012345670"' => "12.3456789012345670",
 );
 ?>
+
 <html>
 <style>
 body {
@@ -102,6 +104,7 @@ td.comp {
     <tr>
         <th border=1 class="side">&nbsp;</th>
 <?php
+//iterate over the dictionary of values above and put the key into '$valuePretty' variable and dictionary value into '$value' variable.
 foreach ($values as $valuePretty => $value) {
 ?>
         <!-- <th><div><?php echo htmlspecialchars($valuePretty); ?></div></th> -->
@@ -118,6 +121,9 @@ foreach ($values as $valueYPretty => $valueY) {
 <?php
     foreach ($values as $valueX) {
 ?>
+        
+<!-- Compare each variable from the horizontal dimension to each variable on the vertical dimension
+     and if double equals returns true, paint a green, otherwise, paint a not-green. -->
         <td class="comp <?php echo ($valueY == $valueX ? 'equals' : 'notequals'); ?>">&nbsp;</td>
 <?php
     }
